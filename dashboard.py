@@ -9,7 +9,7 @@ st.title("Sephora Products and Skincare Reviews")
 
 @st.cache_data
 def load_data():
-    path = r"C:\Users\giana\AI For Business\w11\product_info.csv\Sephora.csv"
+    path = r"C:\Users\giana\AI For Business\w11\Sephora.csv"
     df = pd.read_csv(path)
     df['price_usd'] = pd.to_numeric(df['price_usd'], errors='coerce')
     df['rating'] = pd.to_numeric(df['rating'], errors='coerce')
